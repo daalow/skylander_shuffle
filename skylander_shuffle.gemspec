@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = SkylanderShuffle::VERSION
   spec.authors       = ["Erran Carey"]
   spec.email         = ["me@errancarey.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{A program to emulate and assist in playing a card game created by my younger brother.}
+  spec.summary       = %q{A program to emulate and assist in playing a card game created by my younger brother. }
+  spec.homepage      = "https://github.com/ipwnstuff/skylander_shuffle"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
