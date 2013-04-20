@@ -1,33 +1,31 @@
-{
-    "skylanders": [
-        {
-            "name": "Bouncer",
-            "attack": 150,
-            "defense": 110,
-            "speed": 50,
-            "luck": 90,
-            "characteristics": [
-                "giant"
-            ],
-            "json_class": "SkylanderShuffle::Skylander"
-        },
-        {
-            "name": "Chill",
-            "attack": 40,
-            "defense": 90,
-            "speed": 50,
-            "luck": 90,
-            "characteristics": [],
-            "json_class": "SkylanderShuffle::Skylander"
-        },
-        {
-            "name": "Zook",
-            "attack": 80,
-            "defense": 85,
-            "speed": 20,
-            "luck": 85,
-            "characteristics": [],
-            "json_class": "SkylanderShuffle::Skylander"
-        }
-    ]
-}
+[
+    {
+        "name": "Bouncer",
+        "attack": 150,
+        "defense": 110,
+        "speed": 50,
+        "luck": 90,
+        "characteristics": [
+            "giant"
+        ],
+        "json_class": "SkylanderShuffle::Skylander"
+    },
+    {
+        "name": "Chill",
+        "attack": 40,
+        "defense": 90,
+        "speed": 50,
+        "luck": 90,
+        "characteristics": [],
+        "json_class": "SkylanderShuffle::Skylander"
+    },
+    {
+        "name": "Zook",
+        "attack": 80,
+        "defense": 85,
+        "speed": 20,
+        "luck": 85,
+        "characteristics": [],
+        "json_class": "SkylanderShuffle::Skylander"
+    }
+]
