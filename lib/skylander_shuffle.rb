@@ -5,11 +5,11 @@ require 'json'
 module SkylanderShuffle
   class << self
     def skylanders
-      JSON.parse(DATA)['skylanders']
+      JSON.load(DATA)['skylanders']
     end
 
     def magic_items
-      JSON.parse(DATA)['magic_items']
+      JSON.load(DATA)['magic_items']
     end
   end
 end
@@ -47,7 +47,11 @@ __END__
     }
   ],
   "magic_items": [
-    "Catapult",
-    "Dragonfire Cannon"
+    {
+      "name": "Catapult"
+    },
+    {
+      "name": "Dragonfire Cannon"
+    }
   ]
 }
