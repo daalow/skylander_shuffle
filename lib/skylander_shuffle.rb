@@ -5,53 +5,11 @@ require 'json'
 module SkylanderShuffle
   class << self
     def skylanders
-      JSON.load(DATA)['skylanders']
+      JSON.load(Net::HTTP.get_response(URI.parse('https://raw.github.com/ipwnstuff/skylander_shuffle/master/data/skylanders.json')))['skylanders']rescue { error: "Unable to load JSON from Github." }
     end
 
     def magic_items
-      JSON.load(DATA)['magic_items']
+      JSON.load(Net::HTTP.get_response(URI.parse('https://raw.github.com/ipwnstuff/skylander_shuffle/master/data/magic_items.json')))['magic_items'] rescue { error: "Unable to load JSON from Github." }
     end
   end
 end
-
-__END__
-{
-  "skylanders" : [
-    {
-      "name": "Bouncer",
-      "attack": 150,
-      "defense": 110,
-      "speed": 50,
-      "luck": 90,
-      "characteristics": [
-        "giant"
-      ]
-    },
-    {
-      "name": "Chill",
-      "attack": 40,
-      "defense": 90,
-      "speed": 50,
-      "luck": 90,
-      "characteristics": [
-      ]
-    },
-    {
-      "name": "Zook",
-      "attack": 80,
-      "defense": 85,
-      "speed": 20,
-      "luck": 85,
-      "characteristics": [
-      ]
-    }
-  ],
-  "magic_items": [
-    {
-      "name": "Catapult"
-    },
-    {
-      "name": "Dragonfire Cannon"
-    }
-  ]
-}
