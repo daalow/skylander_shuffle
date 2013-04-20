@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Catapult",
+        "json_class": "SkylanderShuffle::MagicItem"
+    },
+    {
+        "name": "Dragonfire Cannon",
+        "json_class": "SkylanderShuffle::MagicItem"
+    }
+]
